@@ -1,0 +1,16 @@
+<table>
+  <tr>
+    <td>name</td>
+    <td>description</td>
+    <td>url</td>
+    <td>forks_count</td>
+    <td (click)="sort()">watchers_count <span>▾</span></td>
+  </tr>
+  <tr *ngFor="let repo of repos">
+    <td>{{ repo.name }}</td>
+    <td>{{ repo.description }}</td>
+    <td>{{ repo.html_url }}</td>
+    <td>{{ repo.forks_count }}</td>
+    <td>{{ repo.watchers_count }}</td>
+  </tr>
+</table>
